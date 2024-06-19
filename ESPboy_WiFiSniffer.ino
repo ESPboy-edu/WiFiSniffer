@@ -20,7 +20,7 @@ based on ESP8266 mini-sniff by Ray Burnette http://www.hackster.io/rayburne/proj
 
 ESPboyInit myESPboy;
 ESPboyTerminalGUI* GUIobj = NULL;
-//ESPboyTerminalGUI *terminalGUIobj = NULL;
+ESPboyTerminalGUI *terminalGUIobj = NULL;
 //ESPboyOTA2 *OTA2obj = NULL;
 
 uint8_t channel = 1;
@@ -28,6 +28,7 @@ uint8_t channel = 1;
 
 void setup() {
   myESPboy.begin("WiFi sniffer");
+
 /*
   //Check OTA2
   if (myESPboy.getKeys()&PAD_ACT || myESPboy.getKeys()&PAD_ESC) { 

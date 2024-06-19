@@ -15,7 +15,7 @@ extern "C" {
 #include "lib/ESPboyTerminalGUI.h"
 
 #define MAX_APS_TRACKED 100
-#define MAX_CLIENTS_TRACKED 200
+#define MAX_CLIENTS_TRACKED 100
 
 beaconinfo aps_known[MAX_APS_TRACKED];                    // Array to save MACs of known APs
 int aps_known_count = 0;                                  // Number of known APs
